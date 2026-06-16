@@ -1573,11 +1573,45 @@
        RESPONSIVE — MOBILE
     */
     @media (max-width: 640px) {
-      .navbar-links { display: none; }
+      /* ── Role Switcher Banner ── */
+      .role-switcher-banner {
+        height: auto;
+        padding: 8px var(--sp-md);
+        flex-wrap: wrap;
+      }
+      .role-switcher-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        width: 100%;
+      }
+      .role-switcher-logo {
+        font-size: 14px;
+      }
+      .role-switcher-logo span {
+        display: none; /* hide subtitle text on mobile */
+      }
+      .role-switcher-buttons {
+        width: 100%;
+        display: flex;
+        gap: 6px;
+        justify-content: stretch;
+      }
+      .role-btn {
+        flex: 1;
+        justify-content: center;
+        font-size: 11px;
+        padding: 6px 4px;
+        text-align: center;
+        white-space: nowrap;
+      }
 
-      .stepper { padding: var(--sp-md); gap: var(--sp-xs); }
-      .step-text { display: none; }
-      .step-connector { margin: 0 4px; }
+      /* ── Adjust navbar top since banner is taller on mobile ── */
+      .navbar {
+        top: 80px !important;
+      }
+
+      .navbar-links { display: none; }
 
       .panel-card { padding: var(--sp-md); border-radius: var(--radius-lg); }
 
