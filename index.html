@@ -1614,6 +1614,17 @@
 
       .navbar-links { display: none; }
 
+      /* ── Stepper: circles only, no overflowing text ── */
+      .stepper {
+        padding: 10px 12px;
+        gap: 0;
+        overflow: hidden;
+      }
+      .step-text { display: none; }
+      .step-connector { margin: 0 4px; flex: 1; }
+      .step-indicator { gap: 0; }
+      .step-circle { width: 28px; height: 28px; font-size: 12px; }
+
       .panel-card { padding: var(--sp-md); border-radius: var(--radius-lg); }
 
       .specialty-grid { grid-template-columns: 1fr 1fr; }
